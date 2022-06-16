@@ -1,0 +1,10 @@
+.dark-btn {
+  border: 0;
+  background-color: var(--accent-color);
+}
+
+.dark-btn:hover {
+  border: 0;
+  color: white;
+  background-color: var(--accent-color-bg);
+}

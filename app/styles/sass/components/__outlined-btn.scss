@@ -1,0 +1,36 @@
+.outlined-btn {
+  display: inline-block;
+  padding: 15px 90px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--thirdly-color);
+  border: 2px solid var(--thirdly-color);
+  transition: 0.2s;
+  background: transparent;
+  @media (max-width: 1200px) {
+    padding: 10px 60px;
+  }
+  @media (max-width: 768px) {
+    padding: 8px 40px;
+    font-size: 16px;
+  }
+  @media (max-width: 560px) {
+    font-size: 18px;
+    width: 100%;
+    padding: 15px 60px;
+    margin-bottom: 30px;
+  }
+}
+
+.outlined-btn:hover {
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.outlined-btn:active {
+  color: var(--thirdly-color);
+  background-color: var(--accent-color-bg);
+  border: 0;
+}

@@ -1,0 +1,22 @@
+.prime-btn {
+  display: inline-block;
+  width: 100%;
+  min-height: 60px;
+  margin-top: auto;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4px;
+  color: var(--thirdly-color);
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--accent-color);
+  border: 0;
+
+  &:hover {
+    background-color: var(--accent-color-bg);
+  }
+
+  &:active {
+    background-color: var(--accent-color);
+  }
+}

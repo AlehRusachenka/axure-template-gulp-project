@@ -1,0 +1,10 @@
+.container {
+  padding: 0 var(--gutter);
+  max-width: calc(var(--content-width) + var(--mobile-padding) * 2);
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    max-width: 95%;
+  }
+}

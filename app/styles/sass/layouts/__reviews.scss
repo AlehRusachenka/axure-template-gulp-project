@@ -1,0 +1,92 @@
+.reviews {
+  text-align: center;
+  padding: 50px 0px 64px 0px;
+}
+@media (max-width: 1200px) {
+  .reviews {
+    padding: 50px 0px 57px 0px;
+  }
+}
+
+.reviews__feedback {
+  position: relative;
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  margin-bottom: 65px;
+  @media (max-width: 560px) {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__feedback-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--subtitleColor);
+  padding: 38px 10px;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    padding: 50px 10px;
+  }
+}
+
+.reviews__feedback-text::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: -20px;
+  border: 10px solid transparent;
+  border-top: 10px solid #e2e2e2;
+}
+
+.reviews__author {
+  display: flex;
+  @media (max-width: 560px) {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__author-icon {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 1200px) {
+  .reviews__author-icon {
+    width: 63px;
+    height: 63px;
+  }
+}
+
+.reviews__author-info {
+  padding-left: 30px;
+  text-align: start;
+}
+
+.reviews__author-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--titleColor);
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  .reviews__author-name {
+    font-size: 18px;
+  }
+}
+.reviews__author-position {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--titleColor);
+}
+@media (max-width: 1200px) {
+  .reviews__author-position {
+    font-size: 14px;
+  }
+}

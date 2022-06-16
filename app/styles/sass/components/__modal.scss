@@ -1,0 +1,115 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 12%;
+  top: 20%;
+  transform: translate(-20%, -10%);
+  min-width: 470px;
+  background-color: #ffff;
+  border-radius: 10px;
+  @media (max-width: 1200px) {
+    max-width: 400px;
+    left: 12%;
+    top: 23%;
+  }
+  @media (max-width: 560px) {
+    left: 25%;
+  }
+}
+
+.modal__form-container {
+  padding: 45px 50px 50px 50px;
+
+  @media (max-width: 1200px) {
+    padding: 35px 40px 40px 40px;
+  }
+  @media (max-width: 992px) {
+    padding: 35px 30px 30px 30px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 30px 30px 30px;
+  }
+  @media (max-width: 560px) {
+    padding: 20px 30px 30px 30px;
+  }
+}
+
+.modal__form-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 25px 5px;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    padding: 15px 5px;
+  }
+  & span {
+    color: #ec7979;
+  }
+}
+.modal__form-item {
+  margin-bottom: 50px;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.modal__form-input {
+  width: 100%;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 19px;
+  background-color: var(--thirdly-color);
+
+  @media (max-width: 1200px) {
+    padding-bottom: 15px;
+  }
+  @media (max-width: 768px) {
+    font-size: 80%;
+  }
+}
+
+.modal__form-textarea {
+  min-height: 230px;
+  width: 100%;
+  resize: vertical;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #bdbdbd;
+  background-color: var(--thirdly-color);
+
+  @media (max-width: 1200px) {
+    min-height: 200px;
+  }
+}
+
+.modal__form-button {
+  margin: 0 auto;
+}
+
+.closeBtn {
+  color: var(--accent-color);
+  float: right;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 10px 0 0;
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    padding: 8px 8px 0 0;
+  }
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
