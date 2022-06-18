@@ -6,7 +6,7 @@
 	<section class="promo" id="features">
 		<div class="container">
 			<div class="row">
-				<div class="promo__content col-6 col-xs-12">
+				<div class="promo__content col-6 col-sm-12">
 					<img class="promo__logo-img" src="./images/dist/promo/logo.png" alt="logo">
 					<h1 class="promo__title">
 						MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
@@ -14,7 +14,7 @@
 					<p class="promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					<button class="outlined-btn" id="openModal">Download</button>
 				</div>
-				<form class="promo__form col-6 col-xs-12" action="">
+				<form class="promo__form col-6 col-sm-12" action="">
 					<p class="promo__form-title">Try Your <span>FREE</span> Trial Today</p>
 					<div class="form__container ">
 						<div class="form__item">
@@ -40,14 +40,14 @@
 	<section class="social">
 		<div class="container">
 			<div class="row">
-				<div class="social__info col-5 col-xs-12">
-					<p class="social__title col-xs-12">Social Media</p>
-					<p class="social__subtitle col-xs-12">
+				<div class="social__info col-5 col-sm-12">
+					<p class="social__title col-sm-12">Social Media</p>
+					<p class="social__subtitle col-sm-12">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Aenean euismod bibendum laoreet.
 					</p>
 				</div>
-				<div class="social__info col-7 col-xs-12">
+				<div class="social__info col-7 col-sm-12">
 					<div class="social__list">
 						<div class="social__item">
 							<a class="social__link" href="#"><img class="social__img"
@@ -85,14 +85,95 @@
 	<!-- Social End -->
 
 	<!-- Tabs Section -->
-	<div class="tabs" id="tabs">
+	<section class="tabs">
 		<div class="container">
-			<div class="tab whiteborder">Tab 1</div>
+			<div class="tabs__content">
+				<input class="tabs__input tabs__input_one" type="radio" title="tab-one" name="tabs-state" id="tab-one"
+					checked />
+				<input class="tabs__input tabs__input_two" type="radio" title="tab-two" name="tabs-state"
+					id="tab-two" />
+				<input class="tabs__input tabs__input_three" type="radio" title="tab-three" name="tabs-state"
+					id="tab-three" />
+				<div class="tabs tabs_row">
+					<label for="tab-one" id="tab-one-label" class="tabs__label">Tab 1</label>
+					<label for="tab-two" id="tab-two-label" class="tabs__label">Tab 2</label>
+					<label for="tab-three" id="tab-three-label" class="tabs__label">Tab 3</label>
+					<div id="tab-one-panel" class="tabs__panel tabs__panel_one active">
+						<div class="row">
+							<div class="tabs__info col-6">
+								<p class="tabs__title">Tabs with soft transitioning effect.</p>
+								<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Aenean euismod
+									bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+									justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+									penatibus et magnis dis parturient montes.
+								</p>
+								<p class="tabs__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+									bibendum laoreet.
+								</p>
+								<button class="outlined-btn outlined-btn_dark">Download</button>
+							</div>
+							<div class="tabs-gallery col-6">
+								<img class="tabs-gallery__img" src="./images/dist/tabs/liberty.jpg" alt="liberty">
+							</div>
+						</div>
+					</div>
+					<div id="tab-two-panel" class="tabs__panel tabs__panel_two">
+						<div class="row">
+							<div class="tabs__info col-6">
+								<p class="tabs__title">Tabs with soft transitioning effect.</p>
+								<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Aenean euismod
+									bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+									justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+									penatibus et magnis dis parturient montes.
+								</p>
+								<p class="tabs__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+									bibendum laoreet.
+								</p>
+								<button class="outlined-btn outlined-btn_dark">Download</button>
+							</div>
+							<div class="tabs-gallery col-6">
+								<img class="tabs-gallery__img" src="./images/dist/tabs/seattle.jpg" alt="liberty">
+							</div>
+						</div>
+					</div>
+					<div id="tab-three-panel" class="tabs__panel tabs__panel_three">
+						<div class="row">
+							<div class="tabs__info col-6">
+								<p class="tabs__title">Tabs with soft transitioning effect.</p>
+								<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Aenean euismod
+									bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+									justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+									penatibus et magnis dis parturient montes.
+								</p>
+								<p class="tabs__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+									bibendum laoreet.
+								</p>
+								<button class="outlined-btn outlined-btn_dark">Download</button>
+							</div>
+							<div class="tabs-gallery col-6">
+								<img class="tabs-gallery__img" src="./images/dist/tabs/ny_downtown.jpg" alt="liberty">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <div class="tabs" id="tabs">
+		<div class="container">
+			<button class="tab whiteborder">Tab 1</button>
 			<div class="tab">Tab 2</div>
 			<div class="tab">Tab 3</div>
 			<div class="tabContent">
 				<div class="row">
-					<div class="tabs__info col-6 col-xs-12">
+					<div class="tabs__info col-6 col-sm-12">
 						<p class="tabs__title">Tabs with soft transitioning effect.</p>
 						<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 							euismod
@@ -102,7 +183,7 @@
 						<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 							euismod
 							bibendum laoreet.</p>
-						<button class="outlined-btn dark-btn">Download</button>
+						<button class="outlined-btn outlined-btn_dark">Download</button>
 					</div>
 					<div class="tabs-gallery">
 						<img class="tabs-gallery__img" src="./images/dist/tabs/liberty.jpg" alt="liberty">
@@ -111,7 +192,7 @@
 			</div>
 			<div class="tabContent">
 				<div class="row">
-					<div class="tabs__info col-6 col-xs-12">
+					<div class="tabs__info col-6 col-sm-12">
 						<p class="tabs__title">Tabs with soft transitioning effect.</p>
 						<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 							euismod
@@ -121,7 +202,7 @@
 						<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 							euismod
 							bibendum laoreet.</p>
-						<button class="outlined-btn dark-btn">Download</button>
+						<button class="outlined-btn outlined-btn_dark">Download</button>
 					</div>
 					<div class="tabs-gallery">
 						<img class="tabs-gallery__img" src="./images/dist/tabs/ny_downtown.jpg" alt="downtown">
@@ -130,7 +211,7 @@
 			</div>
 			<div class="tabContent">
 				<div class="row">
-					<div class="tabs__info col-6 col-xs-12">
+					<div class="tabs__info col-6 col-sm-12">
 						<p class="tabs__title">Tabs with soft transitioning effect.</p>
 						<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 							euismod
@@ -140,7 +221,7 @@
 						<p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 							euismod
 							bibendum laoreet.</p>
-						<button class="outlined-btn dark-btn">Download</button>
+						<button class="outlined-btn outlined-btn_dark">Download</button>
 					</div>
 					<div class="tabs-gallery">
 						<img class="tabs-gallery__img" src="./images/dist/tabs/seattle.jpg" alt="seattle">
@@ -148,7 +229,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Tabs End -->
 
 	<!-- About Section -->
@@ -161,7 +242,7 @@
 				</p>
 			</div>
 			<div class="row">
-				<div class="about__card col-4 col-xs-12">
+				<div class="about__card col-4 col-sm-12">
 					<img class="about__img" src="./images/dist/about/lightthumb.png" alt="lightthumb">
 					<p class="about__title">Thoughtful Design</p>
 					<p class="about__text">
@@ -170,7 +251,7 @@
 						accumsan et viverra.
 					</p>
 				</div>
-				<div class="about__card col-4 col-xs-12">
+				<div class="about__card col-4 col-sm-12">
 					<img class="about__img" src="./images/dist/about/keyboard.png" alt="lightthumb">
 					<p class="about__title">Thoughtful Design</p>
 					<p class="about__text">
@@ -179,7 +260,7 @@
 						accumsan et viverra.
 					</p>
 				</div>
-				<div class="about__card col-4 col-xs-12">
+				<div class="about__card col-4 col-sm-12">
 					<img class="about__img" src="./images/dist/about/lighting.png" alt="lightthumb">
 					<p class="about__title">Thoughtful Design</p>
 					<p class="about__text">
@@ -202,7 +283,7 @@
 				</p>
 			</div>
 			<div class="row">
-				<div class="pricing__cards col-4 col-xs-12">
+				<div class="pricing__cards col-4 col-sm-12">
 					<div class="pricing__box">
 						<h2 class="pricing__title">Basic</h2>
 						<p class="pricing__price">$10</p>
@@ -217,8 +298,8 @@
 						</ul>
 					</div>
 				</div>
-				<div class="pricing__cards col-4 col-xs-12">
-					<div class="pricing__box pricing__box-up">
+				<div class="pricing__cards col-4 col-sm-12">
+					<div class="pricing__box">
 						<h2 class="pricing__title">Optima</h2>
 						<p class="pricing__price">$20</p>
 						<p class="pricing__subtitle">Free for life</p>
@@ -232,7 +313,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="pricing__cards col-4 col-xs-12">
+				<div class="pricing__cards col-4 col-sm-12">
 					<div class="pricing__box">
 						<h2 class="pricing__title">Pro</h2>
 						<p class="pricing__price">$30</p>
@@ -262,7 +343,7 @@
 				</p>
 			</div>
 			<div class="row">
-				<div class="reviews__card col-4 col-xs-12">
+				<div class="reviews__card col-4 col-sm-12">
 					<div class="reviews__feedback">
 						<p class="reviews__feedback-text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit. Doloribus
@@ -278,7 +359,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews__card col-4 col-xs-12">
+				<div class="reviews__card col-4 col-sm-12">
 					<div class="reviews__feedback">
 						<p class="reviews__feedback-text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit. Doloribus
@@ -294,7 +375,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews__card col-4 col-xs-12">
+				<div class="reviews__card col-4 col-sm-12">
 					<div class="reviews__feedback">
 						<p class="reviews__feedback-text">Lorem ipsum dolor sit amet,
 							consectetur adipisicing elit. Doloribus
@@ -318,7 +399,7 @@
 	<!-- Call to action  Start-->
 	<section class="design">
 		<div class="container">
-			<div class="section-head head_light">
+			<div class="section-head section-head_light">
 				<h2 class="section-head__title">STYLISH AXURE DESIGN</h2>
 				<p class="section-head__subtitle">
 					Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
@@ -340,7 +421,7 @@
 			</div>
 			<form class="contact__form" action="">
 				<div class="row">
-					<div class="form__container col-6 col-xs-12">
+					<div class="form__container col-6 col-sm-12">
 						<div class="form__item">
 							<input class="form__input" type="text" placeholder="Name">
 						</div>
@@ -351,13 +432,13 @@
 							<input class="form__input" type="password" placeholder="Password">
 						</div>
 					</div>
-					<div class="form__container col-6 col-xs-12">
+					<div class="form__container col-6 col-sm-12">
 						<div class="form__item">
 							<textarea class="form__textarea" name="" placeholder="Message"></textarea>
 						</div>
 					</div>
-					<div class="form__button contact_btn">
-						<button class="outlined-btn dark-btn" type="submit">Send Message</button>
+					<div class="form__button contact__btn">
+						<button class="outlined-btn outlined-btn_dark" type="submit">Send Message</button>
 					</div>
 			</form>
 		</div>
@@ -366,7 +447,7 @@
 
 	<!-- Modal Window Start -->
 	<div class="modal" id="myModal">
-		<span class="closeBtn">Close</span>
+		<span class="modal__close-btn">Close</span>
 		<p class="modal__form-title">Let us <span>GET</span> your contacts!</p>
 		<div class="modal__form-container ">
 			<div class="modal__form-item">

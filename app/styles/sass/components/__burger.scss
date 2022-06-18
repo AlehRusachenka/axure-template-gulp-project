@@ -1,0 +1,8 @@
+.burger {
+  display: none;
+
+  @include breakpoint(sm) {
+    display: block;
+    cursor: pointer;
+  }
+}

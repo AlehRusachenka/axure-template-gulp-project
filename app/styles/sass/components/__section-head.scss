@@ -1,9 +1,42 @@
 .section-head {
   padding-top: 50px;
   padding-bottom: 50px;
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  &_light .section-head__title {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+    color: var(--thirdly-color);
+    @include breakpoint(xl) {
+      font-size: 24px;
+    }
+  }
+
+  &_light .section-head__title::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background-color: var(--thirdly-color);
+    @include breakpoint(xl) {
+      width: 142px;
+    }
+  }
+
+  &_light .section-head__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--thirdly-color);
+    padding-bottom: 25px;
+    @include breakpoint(xl) {
+      font-size: 14px;
+    }
   }
 
   &__title {
@@ -11,9 +44,7 @@
     font-size: 36px;
     line-height: 1.4;
     text-transform: uppercase;
-  }
-  @media (max-width: 1200px) {
-    &__title {
+    @include breakpoint(xl) {
       font-size: 24px;
       line-height: 1.4;
     }
@@ -24,10 +55,10 @@
     font-size: 18px;
     line-height: 1.2;
     color: var(--secondary-color);
-  }
-  @media (max-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.2;
+    @include breakpoint(xl) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
   }
 
   &__title:after {
@@ -37,51 +68,10 @@
     height: 2px;
     margin: 40px auto;
     background-color: var(--accent-color);
-  }
-  @media (max-width: 1200px) {
-    .section-head__title:after {
+    @include breakpoint(xl) {
       width: 142px;
       height: 1px;
       margin: 30px auto;
     }
-  }
-}
-
-.head_light .section-head__title {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.4;
-  color: var(--thirdly-color);
-}
-@media (max-width: 1200px) {
-  .head_light .section-head__title {
-    font-size: 24px;
-  }
-}
-
-.head_light .section-head__title::after {
-  content: "";
-  display: block;
-  width: 170px;
-  height: 2px;
-  background-color: var(--thirdly-color);
-}
-@media (max-width: 1200px) {
-  .head_light .section-head__title::after {
-    width: 142px;
-  }
-}
-
-.head_light .section-head__subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  color: var(--thirdly-color);
-  padding-bottom: 25px;
-}
-@media (max-width: 1200px) {
-  .head_light .section-head__subtitle {
-    font-size: 14px;
   }
 }

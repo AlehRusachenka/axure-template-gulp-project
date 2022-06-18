@@ -1,14 +1,4 @@
-.hamburger {
-  display: none;
-}
-
-@media (max-width: 560px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-}
-.bar {
+.burger__line {
   display: block;
   width: 25px;
   height: 3px;

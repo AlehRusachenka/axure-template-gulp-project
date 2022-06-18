@@ -1,73 +1,72 @@
 .social {
   padding: 15px 0px;
   background: #f8efef;
-  @media (max-width: 560px) {
+  @include breakpoint(sm) {
     padding: 35px 0px;
   }
-}
 
-.social__list {
-  display: flex;
-  @media (max-width: 560px) {
-    margin-top: 35px;
+  &__list {
+    display: flex;
+    @include breakpoint(sm) {
+      margin-top: 35px;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+    @include breakpoint(sm) {
+      width: 26px;
+      height: 26px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+    @include breakpoint(sm) {
+      text-align: center;
+    }
   }
-}
 
-.social__item {
-  margin-right: 30px;
-  @media (max-width: 560px) {
-    width: 26px;
-    height: 26px;
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    @include breakpoint(xl) {
+      font-size: 18px;
+    }
+    @include breakpoint(sm) {
+      margin: 0 auto;
+      flex-grow: 1;
+    }
   }
-}
 
-.social__item:last-child {
-  margin-right: 0;
-}
-
-.social__link {
-  text-decoration: none;
-}
-
-.social__info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  @media (max-width: 560px) {
-    text-align: center;
-  }
-}
-
-.social__title {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  color: var(--primary-color);
-  margin-bottom: 15px;
-  @media (max-width: 1200px) {
+  &__subtitle {
+    font-weight: 400;
     font-size: 18px;
-  }
-  @media (max-width: 560px) {
-    margin: 0 auto;
-    flex-grow: 1;
-  }
-}
-
-.social__subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  line-height: inherit;
-  color: var(--secondary-color);
-  @media (max-width: 1200px) {
-    font-size: 14px;
-  }
-  @media (max-width: 560px) {
-    margin: 0 auto;
-    margin-top: 13px;
+    line-height: 1.2;
+    line-height: inherit;
+    color: var(--secondary-color);
+    @include breakpoint(xl) {
+      font-size: 14px;
+    }
+    @include breakpoint(sm) {
+      margin: 0 auto;
+      margin-top: 13px;
+    }
   }
 }
