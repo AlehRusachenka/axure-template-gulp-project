@@ -6,33 +6,33 @@
     padding-bottom: 30px;
   }
 
-  &_light .section-head__title {
+  &_light &__title {
     font-family: "Raleway";
     font-weight: 400;
     font-size: 36px;
     line-height: 1.4;
-    color: var(--thirdly-color);
+    color: var(--white);
     @include breakpoint(xl) {
       font-size: 24px;
     }
   }
 
-  &_light .section-head__title::after {
+  &_light &__title::after {
     content: "";
     display: block;
     width: 170px;
     height: 2px;
-    background-color: var(--thirdly-color);
+    background-color: var(--white);
     @include breakpoint(xl) {
       width: 142px;
     }
   }
 
-  &_light .section-head__subtitle {
+  &_light &__subtitle {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
-    color: var(--thirdly-color);
+    color: var(--white);
     padding-bottom: 25px;
     @include breakpoint(xl) {
       font-size: 14px;

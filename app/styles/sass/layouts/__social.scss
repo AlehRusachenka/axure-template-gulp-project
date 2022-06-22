@@ -1,23 +1,26 @@
 .social {
   padding: 15px 0px;
   background: #f8efef;
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
     padding: 35px 0px;
   }
 
   &__list {
     display: flex;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       margin-top: 35px;
       align-items: center;
       justify-content: center;
       flex-grow: 1;
     }
+    @include breakpoint(md) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     margin-right: 30px;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       width: 26px;
       height: 26px;
     }
@@ -34,7 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       text-align: center;
     }
   }
@@ -49,7 +52,7 @@
     @include breakpoint(xl) {
       font-size: 18px;
     }
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       margin: 0 auto;
       flex-grow: 1;
     }
@@ -64,7 +67,7 @@
     @include breakpoint(xl) {
       font-size: 14px;
     }
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       margin: 0 auto;
       margin-top: 13px;
     }

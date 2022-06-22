@@ -4,12 +4,24 @@
   @include breakpoint(xl) {
     padding: 50px 0px 57px 0px;
   }
+  @include breakpoint(sm) {
+    display: none;
+  }
+
+  &__card {
+    @include breakpoint(lg) {
+      margin-bottom: 30px;
+    }
+  }
 
   &__feedback {
     position: relative;
     background-color: #e2e2e2;
     border-radius: 10px;
     margin-bottom: 65px;
+    @include breakpoint(lg) {
+      margin-bottom: 40px;
+    }
     @include breakpoint(sm) {
       margin-bottom: 30px;
     }
@@ -21,11 +33,11 @@
     font-size: 18px;
     line-height: 1.4;
     text-align: center;
-    color: var(--subtitleColor);
+    color: var(--secondary-color);
     padding: 38px 10px;
-    @include breakpoint(sm) {
+    @include breakpoint(lg) {
       font-size: 14px;
-      padding: 50px 10px;
+      padding: 30px 10px;
     }
     &::after {
       content: "";
@@ -48,10 +60,10 @@
     border-radius: 50%;
     width: 70px;
     height: 70px;
-  }
-  @include breakpoint(xl) {
-    width: 63px;
-    height: 63px;
+    @include breakpoint(xl) {
+      width: 63px;
+      height: 63px;
+    }
   }
 
   &__author-info {
@@ -64,7 +76,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.4;
-    color: var(--titleColor);
+    color: var(--primary-color);
     margin-bottom: 10px;
   }
   @include breakpoint(xl) {
@@ -76,7 +88,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
-    color: var(--titleColor);
+    color: var(--primary-color);
   }
   @include breakpoint(xl) {
     font-size: 14px;

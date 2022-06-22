@@ -1,0 +1,131 @@
+.splide {
+  display: none;
+  @include breakpoint(sm) {
+    display: block;
+  }
+}
+
+.slider-reviews {
+  padding: 50px 0px;
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__card-content {
+    padding-left: 30px;
+  }
+
+  &__card-text {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--text-color);
+    font-style: italic;
+    margin-bottom: 26px;
+    line-height: 1.5;
+    @include breakpoint(xl) {
+      font-size: 18px;
+    }
+    @include breakpoint(sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__card-author {
+    color: var(--primary-color);
+    font-family: "Kaushan Script";
+    font-size: 30px;
+    font-weight: 400px;
+    @include breakpoint(xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__card-author::before {
+    content: "";
+    display: inline-block;
+    margin-right: 56px;
+    width: 70px;
+    height: 4px;
+    background: var(--accent-color);
+    vertical-align: middle;
+    @include breakpoint(xl) {
+      width: 47px;
+      margin-right: 37px;
+    }
+  }
+
+  &__feedback {
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    margin-bottom: 65px;
+    @include breakpoint(sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__card-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 38px 10px;
+    @include breakpoint(sm) {
+      font-size: 14px;
+      padding: 25px 0px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 30px;
+      bottom: -20px;
+      border: 10px solid transparent;
+      border-top: 10px solid #e2e2e2;
+    }
+  }
+
+  &__author {
+    display: flex;
+  }
+
+  &__author-icon {
+    border-radius: 50%;
+    @include breakpoint(sm) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__author-info {
+    @include breakpoint(sm) {
+      padding-left: 20px;
+      text-align: start;
+    }
+  }
+
+  &__author-name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    @include breakpoint(sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__author-position {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--primary-color);
+    @include breakpoint(sm) {
+      font-size: 13px;
+    }
+  }
+}

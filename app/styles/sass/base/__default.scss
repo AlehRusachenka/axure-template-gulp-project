@@ -1,14 +1,19 @@
 :root {
   --primary-color: #000000;
   --secondary-color: #86878b;
-  --thirdly-color: #ffff;
+  --white: #ffff;
   --color-bg: #ffff;
   --color-tx: #212121;
   --accent-color: #ec7979;
-  --accent-color-bg: #ab4949;
+  --btn-hover-bg: #ab4949;
   --content-width: 1170px;
   --mobile-padding: 15px;
   --gutter: 15px;
+}
+
+[data-theme="dark"] {
+  --color-bg: rgb(96, 96, 96);
+  --color-tx: #ec7979;
 }
 
 * {
@@ -17,21 +22,13 @@
 
 html {
   font-family: "Raleway", sans-serif;
-  font-display: unset;
   font-size: 18px;
   line-height: 1.4;
-}
-
-[data-theme="dark"] {
-  --color-bg: rgb(96, 96, 96);
-  --color-tx: #ec7979;
+  color: var(--color-tx);
 }
 
 body {
-  width: 100%;
-  max-width: 100%;
   background-color: var(--color-bg);
-  color: var(--color-tx);
 }
 
 p,

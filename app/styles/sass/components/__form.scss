@@ -1,25 +1,21 @@
 .form {
   &__container {
-    padding: 45px 50px 50px 50px;
-
-    @media (max-width: 1200px) {
-      padding: 35px 40px 40px 40px;
-    }
-    @media (max-width: 992px) {
-      padding: 35px 30px 30px 30px;
-    }
-    @media (max-width: 768px) {
-      padding: 20px 30px 30px 30px;
-    }
-    @media (max-width: 560px) {
-      padding: 20px 30px 30px 30px;
+    padding: 45px 0px;
+    @include breakpoint(md) {
+      padding: 25px 0px;
     }
   }
 
   &__item {
-    margin-bottom: 50px;
+    margin: 0px 30px 50px 30px;
     @include breakpoint(xl) {
       margin-bottom: 40px;
+    }
+    @include breakpoint(lg) {
+      margin: 0px 20px 40px 20px;
+    }
+    @include breakpoint(md) {
+      margin: 0px 10px 20px 10px;
     }
   }
 
@@ -30,7 +26,7 @@
     border: 0;
     border-bottom: 1px solid #bdbdbd;
     padding-bottom: 19px;
-    background-color: var(--thirdly-color);
+    background-color: var(--white);
 
     @include breakpoint(xl) {
       padding-bottom: 15px;
@@ -48,7 +44,7 @@
     outline: 0;
     border: 0;
     border-bottom: 1px solid #bdbdbd;
-    background-color: var(--thirdly-color);
+    background-color: var(--white);
 
     @include breakpoint(xl) {
       min-height: 200px;

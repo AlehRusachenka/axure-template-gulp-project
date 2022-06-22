@@ -1,0 +1,68 @@
+.review-slider {
+  position: relative;
+  padding: 0 87px;
+  @include breakpoint(sm) {
+    padding: 0 71px;
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    top: 50%;
+    z-index: 1;
+    background: url("../../../images/dist/reviews/slider_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:first-child {
+      transform: translatey(-50%) rotate(180deg);
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+      transform: translatey(-50%);
+    }
+  }
+
+  svg {
+    display: none;
+  }
+
+  &__pagination {
+    margin-top: 25px;
+  }
+
+  &__pagination > li {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.splide__pagination__page {
+  display: block;
+  background: none;
+  border: 1px solid #c6cbcd;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  &.is-active {
+    background-color: var(--secondary-color);
+  }
+}

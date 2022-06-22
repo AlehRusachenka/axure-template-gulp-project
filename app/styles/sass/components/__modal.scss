@@ -1,36 +1,26 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 5;
-  left: 12%;
-  top: 20%;
-  transform: translate(-20%, -10%);
-  min-width: 470px;
-  background-color: #ffff;
-  border-radius: 10px;
-  @include breakpoint(xl) {
-    max-width: 400px;
-    left: 12%;
-    top: 23%;
-  }
-  @include breakpoint(sm) {
-    left: 25%;
-  }
+  z-index: 1;
+  padding-top: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
 
-  &__form-container {
-    padding: 45px 50px 50px 50px;
-
-    @include breakpoint(xl) {
-      padding: 35px 40px 40px 40px;
-    }
-    @include breakpoint(lg) {
-      padding: 35px 30px 30px 30px;
-    }
+  &__form {
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    max-width: 500px;
     @include breakpoint(md) {
-      padding: 20px 30px 30px 30px;
+      max-width: 400px;
     }
     @include breakpoint(sm) {
-      padding: 20px 30px 30px 30px;
+      max-width: 330px;
     }
   }
 
@@ -44,10 +34,13 @@
     text-transform: uppercase;
     color: #333333;
     padding: 25px 5px;
-
     @include breakpoint(lg) {
       font-size: 18px;
       padding: 15px 5px;
+    }
+    @include breakpoint(md) {
+      font-size: 16px;
+      padding: 10px 5px;
     }
     & span {
       color: #ec7979;
@@ -69,7 +62,7 @@
     border: 0;
     border-bottom: 1px solid #bdbdbd;
     padding-bottom: 19px;
-    background-color: var(--thirdly-color);
+    background-color: var(--white);
 
     @include breakpoint(lg) {
       padding-bottom: 15px;
@@ -87,7 +80,7 @@
     outline: 0;
     border: 0;
     border-bottom: 1px solid #bdbdbd;
-    background-color: var(--thirdly-color);
+    background-color: var(--white);
 
     @include breakpoint(lg) {
       min-height: 200px;

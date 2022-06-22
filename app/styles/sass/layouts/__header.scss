@@ -24,8 +24,7 @@
     align-items: center;
     list-style: none;
     margin: 0;
-
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       position: fixed;
       flex-direction: column;
       background-color: var(--primary-color);
@@ -43,17 +42,20 @@
 
   &__menu-item {
     margin-right: 40px;
-
     @include breakpoint(lg) {
-      margin-right: 20px;
+      margin-right: 10px;
     }
     @include breakpoint(md) {
-      margin-right: 10px;
+      margin-bottom: 30px;
     }
   }
 
   &__menu-item_has-child:hover > .header__sub-menu {
     display: block;
+  }
+
+  &__header__menu-item_has-child {
+    position: relative;
   }
 
   &__sub-menu {
@@ -62,59 +64,81 @@
     background-color: var(--accent-color);
     padding: 0;
     border-radius: 10px;
-
-    @include breakpoint(sm) {
+    padding: 10px 0px 10px 20px;
+    @include breakpoint(md) {
       position: static;
-      margin-top: -20px;
-      margin-left: 100px;
     }
   }
 
   &__sub-menu-item {
     list-style-type: none;
-    padding: 10px;
-    @include breakpoint(xl) {
-      padding: 5px;
+    padding: 10px 35px 10px 0px;
+  }
+
+  &__second-sub-menu_has-child {
+    position: relative;
+  }
+
+  &__second-sub-menu_has-child::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid var(--white);
+    border-right: 3px solid var(--white);
+    margin-left: 10px;
+    transform: rotate(310deg);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    @include breakpoint(md) {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  &__second-sub-menu_has-child:hover::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid var(--white);
+    border-right: 3px solid var(--white);
+    margin-left: 10px;
+    transform: rotate(130deg);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    @include breakpoint(md) {
+      margin-left: 4px;
     }
   }
 
   &__sub-menu-link {
     text-decoration: none;
-    color: var(--thirdly-color);
-  }
-
-  &__sub-menu-link::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 6px;
-    height: 6px;
-    border-bottom: 3px solid var(--thirdly-color);
-    border-right: 3px solid var(--thirdly-color);
-    margin-left: 10px;
-    transform: rotate(310deg);
-    -webkit-transition: 0.3s all;
-    transition: 0.3s all;
-  }
-
-  &__sub-menu-link:hover::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 6px;
-    height: 6px;
-    border-bottom: 3px solid var(--thirdly-color);
-    border-right: 3px solid var(--thirdly-color);
-    margin-left: 10px;
-    transform: rotate(130deg);
-    -webkit-transition: 0.3s all;
-    transition: 0.3s all;
+    color: var(--white);
   }
 
   &__menu-link {
     text-decoration: none;
-    color: var(--thirdly-color);
+    color: var(--white);
     transition: 0.2s;
+    @include breakpoint(lg) {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    @include breakpoint(md) {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.4;
+    }
   }
 
   &__menu-link:hover {
@@ -154,30 +178,21 @@
     display: none;
     position: absolute;
     top: -10px;
-    left: 112px;
-    margin-top: 10px;
+    width: 100%;
+    left: 100%;
     background-color: var(--accent-color);
-    padding: 0;
+    padding: 10px;
     border-radius: 10px;
-    @include breakpoint(xl) {
-      position: absolute;
-      top: -5px;
-      left: 105px;
-      margin-top: 5px;
-    }
   }
 
   &__second-sub-menu-item {
     list-style-type: none;
     padding: 10px;
-    @include breakpoint(xl) {
-      padding: 5px;
-    }
   }
 
   &__second-sub-menu-link {
     text-decoration: none;
-    color: var(--thirdly-color);
+    color: var(--white);
   }
 
   &__second-sub-menu_has-child:hover > .header__second-sub-menu {

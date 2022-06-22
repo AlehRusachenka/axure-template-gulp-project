@@ -67,7 +67,7 @@
 
 /* xl */
 @include breakpoint(xl) {
-  .col-lg-6 {
+  .col-xl-6 {
     margin: 0 var(--gutter);
     width: calc(100% / 12 * 6 - var(--gutter) * 2);
   }
@@ -75,7 +75,7 @@
 
 /* lg */
 @include breakpoint(lg) {
-  .col-md-6 {
+  .col-lg-6 {
     margin: 0 var(--gutter);
     width: calc(100% / 12 * 6 - var(--gutter) * 2);
   }
@@ -83,15 +83,21 @@
 
 /* md */
 @include breakpoint(md) {
-  .col-sm-6 {
+  .col-md-6 {
     margin: 0 var(--gutter);
     width: calc(100% / 12 * 6 - var(--gutter) * 2);
+  }
+}
+@include breakpoint(md) {
+  .col-md-12 {
+    margin: 0 var(--gutter);
+    width: calc(100% / 12 * 12 - var(--gutter) * 2);
   }
 }
 
 /* sm */
 @include breakpoint(sm) {
-  .col-xs-6 {
+  .col-sm-6 {
     margin: 0 var(--gutter);
     width: calc(100% / 12 * 6 - var(--gutter) * 2);
   }
