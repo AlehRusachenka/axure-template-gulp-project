@@ -1,3 +1,10 @@
+.container {
+  padding-left: var(--mobile-padding);
+  padding-right: var(--mobile-padding);
+  max-width: calc(var(--content-width) + var(--mobile-padding) * 2);
+  margin: 0 auto;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -5,106 +12,77 @@
   margin: 0 - var(--gutter);
 }
 
-.col-1 {
-  width: calc(100% / 12 * 1 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-2 {
-  width: calc(100% / 12 * 2 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-3 {
-  width: calc(100% / 12 * 3 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-4 {
-  width: calc(100% / 12 * 4 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-5 {
-  width: calc(100% / 12 * 5 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-6 {
-  width: calc(100% / 12 * 6 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-7 {
-  width: calc(100% / 12 * 7 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-8 {
-  width: calc(100% / 12 * 8 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-9 {
-  width: calc(100% / 12 * 9 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-10 {
-  width: calc(100% / 12 * 10 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-11 {
-  width: calc(100% / 12 * 11 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-.col-12 {
-  width: calc(100% / 12 * 12 - var(--gutter) * 2);
-  margin: 0 var(--gutter);
-}
-
-/* xl */
-@include breakpoint(xl) {
-  .col-xl-6 {
+@for $value from 1 through 12 {
+  .col-#{$value} {
+    width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
     margin: 0 var(--gutter);
-    width: calc(100% / 12 * 6 - var(--gutter) * 2);
+  }
+
+  @include breakpoint(xl) {
+    .col-xl-#{$value} {
+      margin: 0 var(--gutter);
+      width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+    }
+  }
+
+  @include breakpoint(lg) {
+    .col-lg-#{$value} {
+      margin: 0 var(--gutter);
+      width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+    }
+  }
+
+  @include breakpoint(md) {
+    .col-md-#{$value} {
+      margin: 0 var(--gutter);
+      width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+    }
+  }
+
+  @include breakpoint(sm) {
+    .col-sm-#{$value} {
+      margin: 0 var(--gutter);
+      width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+    }
+  }
+
+  .offset-#{$value} {
+    margin-left: calc(100% / 12 * #{$value} + var(--gutter));
+  }
+
+  .offset-xl-#{$value} {
+    margin-left: calc(100% / 12 * #{$value} + var(--gutter));
+  }
+
+  .offset-lg-#{$value} {
+    margin-left: calc(100% / 12 * #{$value} + var(--gutter));
+  }
+
+  .offset-md-#{$value} {
+    margin-left: calc(100% / 12 * #{$value} + var(--gutter));
+  }
+
+  .offset-sm-#{$value} {
+    margin-left: calc(100% / 12 * #{$value} + var(--gutter));
   }
 }
 
-/* lg */
-@include breakpoint(lg) {
-  .col-lg-6 {
-    margin: 0 var(--gutter);
-    width: calc(100% / 12 * 6 - var(--gutter) * 2);
-  }
+.offset-0 {
+  margin-left: var(--gutter);
 }
 
-/* md */
-@include breakpoint(md) {
-  .col-md-6 {
-    margin: 0 var(--gutter);
-    width: calc(100% / 12 * 6 - var(--gutter) * 2);
-  }
-}
-@include breakpoint(md) {
-  .col-md-12 {
-    margin: 0 var(--gutter);
-    width: calc(100% / 12 * 12 - var(--gutter) * 2);
-  }
+.offset-xl-0 {
+  margin-left: var(--gutter);
 }
 
-/* sm */
-@include breakpoint(sm) {
-  .col-sm-6 {
-    margin: 0 var(--gutter);
-    width: calc(100% / 12 * 6 - var(--gutter) * 2);
-  }
+.offset-lg-0 {
+  margin-left: var(--gutter);
 }
-@include breakpoint(sm) {
-  .col-sm-12 {
-    margin: 0 var(--gutter);
-    width: calc(100% / 12 * 12 - var(--gutter) * 2);
-  }
+
+.offset-md-0 {
+  margin-left: var(--gutter);
+}
+
+.offset-sm-0 {
+  margin-left: var(--gutter);
 }
